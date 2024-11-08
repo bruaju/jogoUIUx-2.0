@@ -1,0 +1,49 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #game-container {
+    position: relative;
+    width: 1082px; /* Tamanho do mapa */
+    height: 732px; /* Tamanho do mapa */
+    background-image: url('fundo.jpg'); /* Substitua pelo caminho da sua imagem de fundo */
+    background-size: cover;
+    border: 1px solid #000;
+  }
+  
+  #character {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: red; /* Cor do personagem */
+    top: 50%; /* Posição inicial do personagem */
+    left: 50%; /* Posição inicial do personagem */
+    transform: translate(-50%, -50%);
+  }
+  
+  #enemy {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: blue; /* Cor do inimigo */
+    top: 100px;  /* Posição inicial do inimigo */
+    left: 300px; /* Posição inicial do inimigo, ajustada para ser visível */
+  }
+  
+  #health-bar {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  
+  #health-value {
+    font-weight: bold;
+    color: red;
+  }
+  
